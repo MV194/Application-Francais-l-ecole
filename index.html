@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login Menu</title>
+    <title>Se Connecter</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h2>Login Menu</h2>
-    <form>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+    <h2>Se Connecter</h2>
+    <form action = main(teacher).html>
+        <label for="email">Email Mon-Avenir:</label><br>
+        <input type="email" id="email" name="email" pattern = ".+@mon-avenir.ca" placeholder = "nom@mon-avenir.ca" title = "Veuillez fournir une adresse email « mon-avenir »" required><br><br>
         <label for="password">Mot de Passe:</label><br>
         <input type="password" id="password" name="password" required><br><br>
         <hr>
-        <button type="button" onclick="guestLogin()">Login as Guest</button><br><br>
-        <input type="submit" value="Soumettre">
+        <button type="button" onclick="guestLogin()">Connectez-vous en tant qu'invité</button><br><br>
+        <input type="submit" value="Entrer">
     </form>
-
+    
     <script>
         function guestLogin() {
             alert("Connecté en tant qu'invité");
+            setTimeout(function() {
+                window.location.href = "main(student).html";
+            }, 2000);
         }
     </script>
 </body>
