@@ -1,6 +1,12 @@
+html{
+  text-align: center;
+  height: 100vh;
+}
+
 body{
+  min-height: 100vh;
   background-color: cornflowerblue;
-  position: sticky;
-  align-items: center;
+  display: block;
+  text-align: center;
 }
 
