@@ -31,9 +31,9 @@
     ?>
     
     <form method="POST">
-    <label for="name">Classe: </label>
+    <label for="name">Classe/Nom de l'enseignant: </label>
     <input type="text" id="classe" name="classe" required>
-    
+    <br>
     <label for="pourcentage">Pourcentage de français: </label>
     <input type="number" id="pourcentage" name="pourcentage" min="0" max="100" required>
     
