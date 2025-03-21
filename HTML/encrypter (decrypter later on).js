@@ -333,25 +333,25 @@ rep = tap.length
 while (rep > 0){
     switch (tap[rep-1]){
         case "1":
-            bin = bin+"001"
+            bin = bin+"001 "
             break;
         case "2":
-            bin = bin+"010"
+            bin = bin+"010 "
             break;
         case "3":
-            bin = bin+"011"
+            bin = bin+"011 "
             break;
         case "4":
-            bin = bin+"100"
+            bin = bin+"100 "
             break;
         case "5":
-            bin = bin+"101"
+            bin = bin+"101 "
             break;
         case "0":
-            bin = bin+"110"
+            bin = bin+"110 "
             break;
         case "-":
-            bin = bin+"111"
+            bin = bin+"111 "
             break;
     }
     rep--
