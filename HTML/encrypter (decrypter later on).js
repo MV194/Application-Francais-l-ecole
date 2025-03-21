@@ -1,4 +1,4 @@
-let Pass = "EcolePRDG"
+let Pass = "FSTReFraAprdg"
 let array = Pass.split("")
 let numb = ""
 let rep = array.length
