@@ -1,359 +1,366 @@
-let Pass = "FSTReFraAprdg"
-let array = Pass.split("")
-let numb = ""
-let rep = array.length
+let bin = "111 010 101 110 111 010 010 110 111 100 101 110 111 100 011 110 111 001 100 001 111 001 100 110 111 100 101 110 111 010 100 001 111 010 011 110 111 100 101 001 111 101 010 001 111 101 001 001 111 010 100 001"
+bin = bin.split(" ")
+let rep = bin.length
 let tap = ""
 while (rep > 0){
-    switch (array[rep-1]){
-        case "A":
-            numb = numb+"D"
+    switch (bin[rep-1]){
+        case "001":
+            tap = tap+"1"
             break;
-        case "a":
-            numb = numb+"d"
+        case "010":
+            tap = tap+"2"
             break;
-        case "B":
-            numb = numb+"E"
+        case "011":
+            tap = tap+"3"
             break;
-        case "b":
-            numb = numb+"e"
+        case "100":
+            tap = tap+"4"
             break;
-        case "C":
-            numb = numb+"F"
+        case "101":
+            tap = tap+"5"
             break;
-        case "c":
-            numb = numb+"e"
+        case "110":
+            tap = tap+"0"
             break;
-        case "D":
-            numb = numb+"G"
+        case "111":
+            tap = tap+"-"
             break;
-        case "d":
-            numb = numb+"g"
-            break;
-        case "E":
-            numb = numb+"H"
-            break;
-        case "e":
-            numb = numb+"h"
-            break;
-        case "F":
-            numb = numb+"I"
-            break;
-        case "f":
-            numb = numb+"i"
-            break;
-        case "G":
-            numb = numb+"J"
-            break;
-        case "g":
-            numb = numb+"j"
-            break;
-        case "H":
-            numb = numb+"K"
-            break;
-        case "h":
-            numb = numb+"k"
-            break;
-        case "I":
-            numb = numb+"L"
-            break;
-        case "i":
-            numb = numb+"l"
-            break;
-        case "J":
-            numb = numb+"M"
-            break;
-        case "j":
-            numb = numb+"m"
-            break;
-        case "K":
-            numb = numb+"N"
-            break;
-        case "k":
-            numb = numb+"n"
-            break;
-        case "L":
-            numb = numb+"O"
-            break;
-        case "l":
-            numb = numb+"o"
-            break;
-        case "M":
-            numb = numb+"P"
-            break;
-        case "m":
-            numb = numb+"p"
-            break;
-        case "N":
-            numb = numb+"Q"
-            break;
-        case "n":
-            numb = numb+"q"
-            break;
-        case "O":
-            numb = numb+"R"
-            break;
-        case "o":
-            numb = numb+"r"
-            break;
-        case "P":
-            numb = numb+"S"
-            break;
-        case "p":
-            numb = numb+"s"
-            break;
-        case "Q":
-            numb = numb+"T"
-            break;
-        case "q":
-            numb = numb+"t"
-            break;
-        case "R":
-            numb = numb+"U"
-            break;
-        case "r":
-            numb = numb+"u"
-            break;
-        case "S":
-            numb = numb+"V"
-            break;
-        case "s":
-            numb = numb+"v"
-            break;
-        case "T":
-            numb = numb+"W"
-            break;
-        case "t":
-            numb = numb+"w"
-            break;
-        case "U":
-            numb = numb+"X"
-            break;
-        case "u":
-            numb = numb+"x"
-            break;
-        case "V":
-            numb = numb+"Y"
-            break;
-        case "v":
-            numb = numb+"y"
-            break;
-        case "W":
-            numb = numb+"Z"
-            break;
-        case "w":
-            numb = numb+"z"
-            break;
-        case "X":
+    }
+    rep--
+}
+tap = tap.split("-")
+rep = tap.length
+let numb = ""
+while (rep > 0){
+    switch (tap[rep-1]){
+        case "111":
             numb = numb+"A"
             break;
-        case "x":
+        case "011":
             numb = numb+"a"
             break;
-        case "Y":
+        case "121":
             numb = numb+"B"
             break;
-        case "y":
+        case "021":
             numb = numb+"b"
             break;
-        case "Z":
+        case "131":
             numb = numb+"C"
             break;
-        case "z":
+        case "031":
             numb = numb+"c"
+            break;
+        case "141":
+            numb = numb+"D"
+            break;
+        case "041":
+            numb = numb+"d"
+            break;
+        case "151":
+            numb = numb+"E"
+            break;
+        case "051":
+            numb = numb+"e"
+            break;
+        case "112":
+            numb = numb+"F"
+            break;
+        case "012":
+            numb = numb+"f"
+            break;
+        case "122":
+            numb = numb+"G"
+            break;
+        case "022":
+            numb = numb+"g"
+            break;
+        case "132":
+            numb = numb+"H"
+            break;
+        case "032":
+            numb = numb+"h"
+            break;
+        case "142":
+            numb = numb+"I"
+            break;
+        case "042":
+            numb = numb+"i"
+            break;
+        case "152":
+            numb = numb+"J"
+            break;
+        case "052":
+            numb = numb+"j"
+            break;
+        case "131":
+            numb = numb+"K"
+            break;
+        case "031":
+            numb = numb+"k"
+            break;
+        case "113":
+            numb = numb+"L"
+            break;
+        case "013":
+            numb = numb+"l"
+            break;
+        case "123":
+            numb = numb+"M"
+            break;
+        case "023":
+            numb = numb+"m"
+            break;
+        case "133":
+            numb = numb+"N"
+            break;
+        case "033":
+            numb = numb+"n"
+            break;
+        case "143":
+            numb = numb+"O"
+            break;
+        case "043":
+            numb = numb+"o"
+            break;
+        case "153":
+            numb = numb+"P"
+            break;
+        case "053":
+            numb = numb+"p"
+            break;
+        case "114":
+            numb = numb+"Q"
+            break;
+        case "014":
+            numb = numb+"q"
+            break;
+        case "124":
+            numb = numb+"R"
+            break;
+        case "024":
+            numb = numb+"r"
+            break;
+        case "134":
+            numb = numb+"S"
+            break;
+        case "034":
+            numb = numb+"s"
+            break;
+        case "144":
+            numb = numb+"T"
+            break;
+        case "044":
+            numb = numb+"t"
+            break;
+        case "154":
+            numb = numb+"U"
+            break;
+        case "054":
+            numb = numb+"u"
+            break;
+        case "115":
+            numb = numb+"V"
+            break;
+        case "015":
+            numb = numb+"v"
+            break;
+        case "125":
+            numb = numb+"W"
+            break;
+        case "025":
+            numb = numb+"w"
+            break;
+        case "135":
+            numb = numb+"X"
+            break;
+        case "035":
+            numb = numb+"x"
+            break;
+        case "145":
+            numb = numb+"Y"
+            break;
+        case "045":
+            numb = numb+"y"
+            break;
+        case "155":
+            numb = numb+"Z"
+            break;
+        case "055":
+            numb = numb+"z"
             break;
     }
     rep--
 }
 numb = numb.split("")
-rep = array.length
+rep = numb.length
+let pass = ""
 while (rep > 0){
     switch (numb[rep-1]){
-        case "A":
-            tap = tap+"111-"
-            break;
-        case "a":
-            tap = tap+"011-"
-            break;
-        case "B":
-            tap = tap+"121-"
-            break;
-        case "b":
-            tap = tap+"021-"
-            break;
-        case "C":
-            tap = tap+"131-"
-            break;
-        case "c":
-            tap = tap+"031-"
-            break;
         case "D":
-            tap = tap+"141-"
+            pass = pass+"A"
             break;
         case "d":
-            tap = tap+"041-"
+            pass = pass+"a"
             break;
         case "E":
-            tap = tap+"151-"
+            pass = pass+"B"
             break;
         case "e":
-            tap = tap+"051-"
+            pass = pass+"b"
             break;
         case "F":
-            tap = tap+"112-"
+            pass = pass+"C"
             break;
         case "f":
-            tap = tap+"012-"
+            pass = pass+"c"
             break;
         case "G":
-            tap = tap+"122-"
+            pass = pass+"D"
             break;
         case "g":
-            tap = tap+"022-"
+            pass = pass+"d"
             break;
         case "H":
-            tap = tap+"132-"
+            pass = pass+"E"
             break;
         case "h":
-            tap = tap+"032-"
+            pass = pass+"e"
             break;
         case "I":
-            tap = tap+"142-"
+            pass = pass+"F"
             break;
         case "i":
-            tap = tap+"042-"
+            pass = pass+"f"
             break;
         case "J":
-            tap = tap+"152-"
+            pass = pass+"G"
             break;
         case "j":
-            tap = tap+"052-"
+            pass = pass+"g"
             break;
         case "K":
-            tap = tap+"131-"
+            pass = pass+"H"
             break;
         case "k":
-            tap = tap+"031-"
+            pass = pass+"h"
             break;
         case "L":
-            tap = tap+"113-"
+            pass = pass+"I"
             break;
         case "l":
-            tap = tap+"013-"
+            pass = pass+"i"
             break;
         case "M":
-            tap = tap+"123-"
+            pass = pass+"J"
             break;
         case "m":
-            tap = tap+"023-"
+            pass = pass+"j"
             break;
         case "N":
-            tap = tap+"133-"
+            pass = pass+"K"
             break;
         case "n":
-            tap = tap+"033-"
+            pass = pass+"k"
             break;
         case "O":
-            tap = tap+"143-"
+            pass = pass+"L"
             break;
         case "o":
-            tap = tap+"043-"
+            pass = pass+"l"
             break;
         case "P":
-            tap = tap+"153-"
+            pass = pass+"M"
             break;
         case "p":
-            tap = tap+"053-"
+            pass = pass+"m"
             break;
         case "Q":
-            tap = tap+"114-"
+            pass = pass+"N"
             break;
         case "q":
-            tap = tap+"014-"
+            pass = pass+"n"
             break;
         case "R":
-            tap = tap+"124-"
+            pass = pass+"O"
             break;
         case "r":
-            tap = tap+"024-"
+            pass = pass+"o"
             break;
         case "S":
-            tap = tap+"134-"
+            pass = pass+"P"
             break;
         case "s":
-            tap = tap+"034-"
+            pass = pass+"p"
             break;
         case "T":
-            tap = tap+"144-"
+            pass = pass+"Q"
             break;
         case "t":
-            tap = tap+"044-"
+            pass = pass+"q"
             break;
         case "U":
-            tap = tap+"154-"
+            pass = pass+"R"
             break;
         case "u":
-            tap = tap+"054-"
+            pass = pass+"r"
             break;
         case "V":
-            tap = tap+"115-"
+            pass = pass+"S"
             break;
         case "v":
-            tap = tap+"015-"
+            pass = pass+"s"
             break;
         case "W":
-            tap = tap+"125-"
+            pass = pass+"T"
             break;
         case "w":
-            tap = tap+"025-"
+            pass = pass+"t"
             break;
         case "X":
-            tap = tap+"135-"
+            pass = pass+"U"
             break;
         case "x":
-            tap = tap+"035-"
+            pass = pass+"u"
             break;
         case "Y":
-            tap = tap+"145-"
+            pass = pass+"V"
             break;
         case "y":
-            tap = tap+"045-"
+            pass = pass+"v"
             break;
         case "Z":
-            tap = tap+"155-"
+            pass = pass+"W"
             break;
         case "z":
-            tap = tap+"055-"
+            pass = pass+"w"
+            break;
+        case "A":
+            pass = pass+"X"
+            break;
+        case "a":
+            pass = pass+"x"
+            break;
+        case "B":
+            pass = pass+"Y"
+            break;
+        case "b":
+            pass = pass+"y"
+            break;
+        case "C":
+            pass = pass+"Z"
+            break;
+        case "c":
+            pass = pass+"z"
             break;
     }
     rep--
 }
-let bin = ""
-tap = tap.split("")
-rep = tap.length
-while (rep > 0){
-    switch (tap[rep-1]){
-        case "1":
-            bin = bin+"001 "
-            break;
-        case "2":
-            bin = bin+"010 "
-            break;
-        case "3":
-            bin = bin+"011 "
-            break;
-        case "4":
-            bin = bin+"100 "
-            break;
-        case "5":
-            bin = bin+"101 "
-            break;
-        case "0":
-            bin = bin+"110 "
-            break;
-        case "-":
-            bin = bin+"111 "
-            break;
-    }
-    rep--
+let imp = prompt("Enter password:\n")
+if (imp == pass){
+    console.log("correct")
+    let correctpass = true
+} else{
+    console.log("incorrect")
+    let correctpass = false
 }
-console.log(bin)
