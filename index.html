@@ -8,7 +8,7 @@
 </head>
 <body>
     <h2>Se Connecter</h2>
-    <form action = "main(teacher).html">
+    <form action = "HTML/main_teacher.html">
         <label for="email">Email Mon-Avenir:</label><br>
         <input type="email" id="email" name="email" pattern = ".+@mon-avenir.ca" placeholder = "nom@mon-avenir.ca" title = "Veuillez fournir une adresse email « mon-avenir »" required><br><br>
         <label for="password">Mot de Passe:</label><br>
@@ -22,7 +22,7 @@
         function guestLogin() {
             alert("Connecté en tant qu'invité");
             setTimeout(function() {
-                window.location.href = "/HTML/main_student.html";
+                window.location.href = "HTML/main_student.html";
             }, 2000);
         }
     </script>
