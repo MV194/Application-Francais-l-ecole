@@ -356,11 +356,25 @@ while (rep > 0){
     }
     rep--
 }
-let imp = prompt("Enter password:\n")
-if (imp == pass){
-    console.log("correct")
-    let correctpass = true
-} else{
-    console.log("incorrect")
-    let correctpass = false
+
+async function Hashing(pass) {
+    const encoder = new TextEncoder();
+    const data = encoder.encode(pass);
+    const hashBuffer = await crypto.subtle.digest("SHA-256", data);
+    const hashArray = Array.from(new Uint8Array(hashBuffer));
+    return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
 }
+
+async function checkPass() {
+    let imp = prompt("Enter password:\n");
+    let userHash = await Hashing(imp); // Hash user input
+    let storedHash = "1ecb2a43458a3d931b2d810040b2f21ec40a55d070a388735346a725b0c35498"; 
+
+    if (userHash === storedHash) {
+        console.log("correct");
+    } else {
+        console.log("incorrect");
+    }
+}
+
+checkPass();
