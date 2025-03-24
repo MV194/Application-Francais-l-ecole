@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thermomètre</title>
+    <h1>Page d'Accueil</h1>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,8 +13,10 @@
             padding: 0;
         }
         .navbar {
+            position: absolute;
+            right: 0;
+            top: 0;
             display: flex;
-            justify-content: flex-end;
             background-color: #333;
             padding: 12px;
         }
@@ -22,6 +25,7 @@
             padding: 16px 22px;
             text-decoration: none;
             text-align: center;
+            width: 150px;
         }
         .navbar a:hover {
             background-color: #ddd;
@@ -136,17 +140,18 @@
             min-height: 100svh;
             display: grid;
             place-items: center;
-            background: #141719;
+            background: #ffffff;
         }
     </style>
   </head>
   
   <body>
     <div class="navbar">
-      <a href="#">Accueil</a>
-      <a href="#">Thermomètre</a>
+      <a href="HTML/main_teacher.html">Accueil</a>
+      <a href="HTML/thermomere.html">Thermomètre</a>
       <a href="#">Jeux</a>
-      <a href="#">À Propos Nous</a>
+      <a href="HTML/contact.html">À Propos Nous</a>
+      <a href="index.html">Déconnecter</a>
     </div>
     <div class="content">
       <h1>Thermomètre</h1>
