@@ -31,6 +31,22 @@
             background-color: #ddd;
             color: black;
         }
+       .grid{
+         display: inline-grid;
+         grid-template-columns: auto auto auto auto;
+         grid-template-rows: auto auto;
+         background-color: grey;
+         padding: 10px;
+         column-gap:5px;
+         row-gap:5px;
+         
+       }
+       .grid > div{
+       	font-size: 30px;
+       	background-color: white;
+        border: 1px solid black;
+        padding: 3px;
+       }
     </style>
   </head>
   
@@ -41,6 +57,16 @@
       <a href="#">Jeux</a>
       <a href="contact.html">À Propos Nous</a>
       <a href="../index.html">Déconnecter</a>
+    </div>
+    <div class="grid">
+      <div>Marko Vulpin</div>
+      <div>Mykhaylo Voro</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
     </div>
   </body>
 </html>
